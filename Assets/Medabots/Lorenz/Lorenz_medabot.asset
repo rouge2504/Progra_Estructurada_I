@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20635e3d708ec5a41b00aa48e76ad447, type: 3}
   m_Name: Lorenz_medabot
   m_EditorClassIdentifier: 
-  velocity: 0
-  life: 0
-  force: 0
-  energy: 0
-  defense: 0
-  stamina: 0
+  velocity: 3
+  life: 12
+  force: 8
+  energy: 7
+  defense: 7
+  stamina: 3
