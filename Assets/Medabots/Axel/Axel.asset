@@ -18,3 +18,4 @@ MonoBehaviour:
   energy: 3
   defense: 3
   stamina: 10
+  element: 7
