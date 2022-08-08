@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20635e3d708ec5a41b00aa48e76ad447, type: 3}
   m_Name: Lorenz_medabot
   m_EditorClassIdentifier: 
+  nameMedabot: Ogroid
+  nameMaker: Bolt Grezzer
   velocity: 3
   life: 12
   force: 8
@@ -19,3 +21,9 @@ MonoBehaviour:
   defense: 7
   stamina: 3
   element: 7
+  physicAtack:
+    nameAttack: Plasma Gun
+    description: Shoots plasma from its gun
+    type: 2
+    damage: 15
+    energyCost: 5

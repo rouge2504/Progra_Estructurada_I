@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20635e3d708ec5a41b00aa48e76ad447, type: 3}
   m_Name: Axel
   m_EditorClassIdentifier: 
+  nameMedabot: Kensei
+  nameMaker: Braytech
   velocity: 10
   life: 10
   force: 4
@@ -19,3 +21,9 @@ MonoBehaviour:
   defense: 3
   stamina: 10
   element: 7
+  physicAtack:
+    nameAttack: Rivers of Blood
+    description: makes a blood cut from the sword
+    type: 2
+    damage: 13
+    energyCost: 2
