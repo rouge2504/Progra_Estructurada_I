@@ -12,7 +12,8 @@ public class DialogueSystem : MonoBehaviour
     public float timingToErase;
     void Start()
     {
-        dialogue.text = Next();
+        //dialogue.text = Next();
+        StartCoroutine(AutoClick());
     }
 
 
@@ -24,13 +25,13 @@ public class DialogueSystem : MonoBehaviour
 
     public void FixedUpdate()
     {
-       
-        timingToErase += Time.deltaTime;
-        if (timingToErase > timeToErase)
-        {
-            dialogue.text = Next();
-            timingToErase = 0;
-        }
+
+        //timingToErase += Time.deltaTime;
+        //if (timingToErase > timeToErase)
+        //{
+        //    dialogue.text = Next();
+        //    timingToErase = 0;
+        //}
     }
 
     public void Update()
@@ -54,6 +55,16 @@ public class DialogueSystem : MonoBehaviour
         {
             contentDialogue[i] = contentDialogue_temp[i];
         }
+        AutoClick();
         return dialogue;
+    }
+
+    IEnumerator AutoClick()
+    {
+        for (int i = 10; i >= 0; i -= 2)
+        {
+            dialogue.text = Next();
+            yield return new WaitForSeconds(2f);  
+        }
     }
 }
