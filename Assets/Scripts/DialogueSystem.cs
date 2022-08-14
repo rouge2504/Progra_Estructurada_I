@@ -61,7 +61,7 @@ public class DialogueSystem : MonoBehaviour
 
     IEnumerator AutoClick()
     {
-        for (int i = 10; i >= 0; i -= 2)
+        for (int i = 8; i >= 0; i -= 2)
         {
             dialogue.text = Next();
             yield return new WaitForSeconds(2f);  
