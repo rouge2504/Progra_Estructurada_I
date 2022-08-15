@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20635e3d708ec5a41b00aa48e76ad447, type: 3}
   m_Name: Rojo
   m_EditorClassIdentifier: 
+  nameMedabot: 
+  nameMaker: 
   velocity: 0
   life: 0
   force: 0
   energy: 0
   defense: 0
   stamina: 0
+  element: 7
+  physicAtack:
+    nameAttack: Sucker Punch
+    description: 
+    type: 1
+    damage: 5
+    energyCost: 0
