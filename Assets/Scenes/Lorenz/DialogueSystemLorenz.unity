@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -153,7 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -200,7 +199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1028202425}
-  - component: {fileID: 1028202426}
+  - component: {fileID: 1028202424}
   m_Layer: 0
   m_Name: DialogueSystem
   m_TagString: Untagged
@@ -208,6 +207,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1028202424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028202423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b66b4ca794db144a015ed87168044e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentDialogue:
+  - Hola, Bienvenido
+  - Preparado para una batalla
+  - Que se arme perro
+  - Un tirante o que?
+  - Te aguitas o nel?
+  dialogue: {fileID: 1177213671}
+  timeToErase: 5
+  timingToErase: 0
 --- !u!4 &1028202425
 Transform:
   m_ObjectHideFlags: 0
@@ -223,25 +243,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1028202426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028202423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b524654270b7c584cb82e8d058287bde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentDialogue:
-  - Hola,
-  - Que tal
-  - Quieres pasar por aqui?
-  - Hahahaha
-  - Tendras que enfrentarme
-  dialogue: {fileID: 1177213671}
 --- !u!1 &1140274858
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,7 +954,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1028202424}
         m_TargetAssemblyTypeName: DialogueSystem, Assembly-CSharp
         m_MethodName: NextDialogue
         m_Mode: 1
