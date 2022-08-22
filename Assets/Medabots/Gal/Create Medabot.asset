@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20635e3d708ec5a41b00aa48e76ad447, type: 3}
   m_Name: Create Medabot
   m_EditorClassIdentifier: 
+  nameMedabot: 
+  nameMaker: 
   velocity: 10
   life: 8
   force: 7
@@ -19,3 +21,9 @@ MonoBehaviour:
   defense: 8
   stamina: 5
   element: 2
+  physicAtack:
+    nameAttack: 
+    description: 
+    type: 1
+    damage: 0
+    energyCost: 0
