@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81b897c1dcac9ed4d9fbb52090ef8040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  medabot1: {fileID: 11400000, guid: 0cfb3c6adc53396409c3b17f6be77d94, type: 2}
+  medabot1: {fileID: 11400000, guid: 0801006ad6138584687ae78eaa778649, type: 2}
   medabot2: {fileID: 11400000, guid: 973dffe31bb8e5c4297370fd8a679350, type: 2}
 --- !u!4 &249871149
 Transform:

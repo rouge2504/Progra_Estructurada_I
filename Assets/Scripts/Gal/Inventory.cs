@@ -27,7 +27,7 @@ public class Inventory : MonoBehaviour
   
     void Start()
     {
-        Debug.Log(itemInventory[1].name);
+        //Debug.Log(itemInventory[1].name);
         //var itemsChild = GameObject.Find("Items").transform;
         //Debug.Log(itemsChild.name);
 
