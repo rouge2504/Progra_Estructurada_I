@@ -23,6 +23,12 @@ public class Medabot : ScriptableObject
 
     public Attack physicAtack;
 
+    public bool StatsLegit()
+    {
+        int stats = velocity + life + force + energy + defense + stamina;
+        return stats == 40;
+    }
+
     //pasivas.
 
 
