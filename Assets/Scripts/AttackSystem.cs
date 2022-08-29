@@ -49,14 +49,14 @@ public class AttackSystem : MonoBehaviour
         int attack = 0;
         for (int i = 0; i < medabots[0].force; i++)
         {
-            attack += Random.Range(1, 7); //1,2,3,4,5,6 //2,1,1,0,0,0
+            attack += Random.Range(0, 3); //1,2,3,4,5,6 //2,1,1,0,0,0
         }
         //print(attack);
 
         int def = 0;
         for (int i = 0; i < medabots[1].defense; i++)
         {
-            def += Random.Range(1, 7);
+            def += Random.Range(0, 2);
         }
         //print(def);
         return attack > def;
