@@ -14,8 +14,8 @@ public class PanelManager : MonoBehaviour
     void Start()
     {
         //RectTransform selectPosition = image.gameObject.GetComponent<RectTransform>();
-        Debug.Log(inventory.itemInventory[2].name);
-        //inventory = gameObject.GetComponent<Inventory>();
+        //Debug.Log(inventory.itemInventory[2].name);
+        inventory = gameObject.GetComponent<Inventory>();
         //for(int i = 0; i < inventory.itemInventory.Length; i++)
         //{
         //    container[i] = inventory.itemInventory[i];
@@ -23,8 +23,8 @@ public class PanelManager : MonoBehaviour
 
         //}
 
-        RectTransform picture = image.GetComponent<RectTransform>();
-        picture.anchoredPosition = new Vector2(inventory.itemInventory[3].GetComponent<RectTransform>().position.x, inventory.itemInventory[3].GetComponent<RectTransform>().position.y);
+       // RectTransform picture = image.GetComponent<RectTransform>();
+       // picture.anchoredPosition = new Vector2(inventory.itemInventory[3].GetComponent<RectTransform>().position.x, inventory.itemInventory[3].GetComponent<RectTransform>().position.y);
 
 
     }

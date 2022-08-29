@@ -4,15 +4,44 @@ using UnityEngine;
 
 public class ItemManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Items[] items;
+    int i = 0;
+
+    private void Start()
     {
-        
+        items[i].select.enabled = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.RightArrow) && i+1 < items.Length)
+        {
+            items[i].select.enabled = false;
+            i++;
+            items[i].select.enabled = true;
+            Debug.Log(i);
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && i + 1 >= items.Length)
+        {
+            items[i].select.enabled = false;
+            i = 0;
+            items[i].select.enabled = true;
+            Debug.Log(i);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && i > 0)
+        {
+            items[i].select.enabled = false;
+            i--;
+            items[i].select.enabled = true;
+            Debug.Log(i);
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) && i <= 0)
+        {
+            items[i].select.enabled = false;
+            i = items.Length - 1;
+            items[i].select.enabled = true;
+            Debug.Log(i);
+        }
     }
 }

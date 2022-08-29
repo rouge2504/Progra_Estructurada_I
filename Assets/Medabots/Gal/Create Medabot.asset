@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Create Medabot
   m_EditorClassIdentifier: 
   nameMedabot: Mantabot
-  nameMaker: 
+  nameMaker: OrgCorp
   velocity: 10
   life: 8
   force: 7
