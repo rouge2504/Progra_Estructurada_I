@@ -12,12 +12,20 @@ public class AttackSystem : MonoBehaviour
     void Start()
     {
         InitBattle();
-        int counter = 0;
+        /*int counter = 0;
         while (!MakeAttack())
         {
             counter += 1;
         }
         print("Apenas salio despues de: " + counter + " intentos");
+        */
+        if (MakeAttack())
+        {
+            int life = medabots[1].life;
+            print("Antes: " + life);
+            life -= medabots[0].force;
+            print("Despues: " + life);
+        }
     }
 
     void InitBattle()
@@ -51,14 +59,14 @@ public class AttackSystem : MonoBehaviour
         {
             attack += Random.Range(0, 3); //1,2,3,4,5,6 //2,1,1,0,0,0
         }
-        //print(attack);
 
         int def = 0;
         for (int i = 0; i < medabots[1].defense; i++)
         {
             def += Random.Range(0, 2);
         }
-        //print(def);
+
+        print("Ataque: " + attack + " defensa: " + def);
         return attack > def;
     }
 
