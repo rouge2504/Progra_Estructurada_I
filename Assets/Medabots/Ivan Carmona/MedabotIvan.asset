@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20635e3d708ec5a41b00aa48e76ad447, type: 3}
   m_Name: MedabotIvan
   m_EditorClassIdentifier: 
+  nameMedabot: 
+  nameMaker: 
   velocity: 7
   life: 7
   force: 5
@@ -19,3 +21,9 @@ MonoBehaviour:
   defense: 7
   stamina: 7
   element: 5
+  physicAtack:
+    nameAttack: 'latigazo '
+    description: fuerte golpe con la cola espinada
+    type: 1
+    damage: 6
+    energyCost: 4
